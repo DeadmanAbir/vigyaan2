@@ -1,39 +1,87 @@
 
-import { AvatarImage, Avatar } from "@/components/ui/avatar"
+// import { AvatarImage, Avatar } from "@/components/ui/avatar"
 
 export default function Speakers() {
   return (
     <div className="bg-[#0c0c0c] py-12">
       <div className="container mx-auto px-4">
-        <h2 className="text-center text-white text-4xl font-semibold mb-10">Speakers</h2>
-        <div className="flex justify-center space-x-8">
-          <div className="text-center">
-            <Avatar>
-              <AvatarImage alt="Nitin Gadkari" 
-              src="https://png.pngtree.com/png-clipart/20210321/original/pngtree-golden-megaphone-speaker-png-image_6145812.jpg"
-              
-               />
-            </Avatar>
-            <h3 className="text-white text-xl font-semibold mt-4">Nitin Gadkari</h3>
-            <p className="text-white text-opacity-70">Hon'ble Minister of Road Transport & Highways of India</p>
+        <h2 className="text-center text-7xl font-semibold mb-10 text-[#ebe4a6]">Events</h2>
+        <section id="Events">
+          <div className=" ">
+            <div className="mx-auto max-w-7xl px-6 lg:px-8">
+              <div className="w-full flex justify-center">
+                <div
+                  className="carousel carousel-center  sm:max-w-md lg:max-w-full lg:w-full  p-4 space-x-4 bg-neutral rounded-box">
+                  <div className="carousel-item rounded sm: w-2/3 lg:w-1/3  bg-gradient-to-t from-[#010101] to-[#ebe4a6]">
+                    <div className="card w-96 bg-transparent text-[#ebe4a6] shadow-xl">
+                      <div className="w-full sm:w-1/2 lg:w-1/3 group relative overflow-hidden">
+                        <span
+                          className="group-hover:opacity-100 opacity-0 features-bg absolute w-full h-full left-0 top-0 -z-1"></span>
+                        <div className="text-center py-8 sm:py-10 xl:py-15 px-4 lg:px-8 xl:px-13">
+                          <span className="relative rounded-full inline-flex items-center justify-center mb-8 mx-auto">
+                            <img loading="lazy" src="https://becon.edciitd.com/images/vijay-shekhar-sharma.jpg" alt="icon"
+                              className=" w-[12rem] rounded-full" />
+                          </span>
+                          <h4 className="font-semibold text-lg  my-2">
+                            Nitin Gadkari
+                          </h4>
+                          <p className="font-medium">
+                            Hon&apos;ble Minister of Road Transport &amp; Highways of India
+                          </p>
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+                  <div className="carousel-item rounded sm: w-2/3 lg:w-1/3  bg-gradient-to-t from-[#010101] to-[#ebe4a6]">
+                    <div className="card w-96 bg-transparent text-[#ebe4a6] shadow-xl">
+                      <div className="w-full sm:w-1/2 lg:w-1/3 group relative overflow-hidden">
+                        <span
+                          className="group-hover:opacity-100 opacity-0 features-bg absolute w-full h-full left-0 top-0 -z-1"></span>
+                        <div className="text-center py-8 sm:py-10 xl:py-15 px-4 lg:px-8 xl:px-13">
+                          <span className="relative rounded-full inline-flex items-center justify-center mb-8 mx-auto">
+                            <img loading="lazy" src="https://becon.edciitd.com/images/vijay-shekhar-sharma.jpg" alt="icon"
+                              className=" w-[12rem] rounded-full" />
+                          </span>
+                          <h4 className="font-semibold text-lg  my-2">
+                            Nitin Gadkari
+                          </h4>
+                          <p className="font-medium">
+                            Hon&apos;ble Minister of Road Transport &amp; Highways of India
+                          </p>
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+                  <div className="carousel-item rounded sm: w-2/3 lg:w-1/3  bg-gradient-to-t from-[#010101] to-[#ebe4a6]">
+                    <div className="card w-96 bg-transparent text-[#ebe4a6] shadow-xl">
+                      <div className="w-full sm:w-1/2 lg:w-1/3 group relative overflow-hidden">
+                        <span
+                          className="group-hover:opacity-100 opacity-0 features-bg absolute w-full h-full left-0 top-0 -z-1"></span>
+                        <div className="text-center py-8 sm:py-10 xl:py-15 px-4 lg:px-8 xl:px-13">
+                          <span className="relative rounded-full inline-flex items-center justify-center mb-8 mx-auto">
+                            <img loading="lazy" src="https://becon.edciitd.com/images/vijay-shekhar-sharma.jpg" alt="icon"
+                              className=" w-[12rem] rounded-full" />
+                          </span>
+                          <h4 className="font-semibold text-lg  my-2">
+                            Nitin Gadkari
+                          </h4>
+                          <p className="font-medium">
+                            Hon&apos;ble Minister of Road Transport &amp; Highways of India
+                          </p>
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+            </div>
           </div>
-          <div className="text-center">
-            <Avatar>
-              <AvatarImage alt="Raghuram Rajan"  src="https://png.pngtree.com/png-clipart/20210321/original/pngtree-golden-megaphone-speaker-png-image_6145812.jpg"
-               />
-            </Avatar>
-            <h3 className="text-white text-xl font-semibold mt-4">Raghuram Rajan</h3>
-            <p className="text-white text-opacity-70">Professor, Chicago's Booth University, Ex Governor RBI</p>
-          </div>
-          <div className="text-center">
-            <Avatar>
-              <AvatarImage alt="Vijay Shekhar Sharma"  src="https://png.pngtree.com/png-clipart/20210321/original/pngtree-golden-megaphone-speaker-png-image_6145812.jpg"
-               />
-            </Avatar>
-            <h3 className="text-white text-xl font-semibold mt-4">Vijay Shekhar Sharma</h3>
-            <p className="text-white text-opacity-70">Founder, PayTM</p>
-          </div>
-        </div>
+        </section>
       </div>
     </div>
   )
