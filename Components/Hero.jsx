@@ -1,64 +1,132 @@
-
-import { Button } from "@/components/ui/button"
+import React, { useState, useEffect } from 'react';
+import { AiOutlineMenu } from 'react-icons/ai';
+import { Button } from "@/components/ui/button";
 
 export default function Hero() {
-  return (
-    <div className="bg-[#0c0617] min-h-screen flex flex-col items-center justify-center text-white">
-      <header className="absolute top-0 left-0 right-0 flex justify-between items-center p-4">
+    const [isOpen, setIsOpen] = useState(false);
+    const [isSmallScreen, setIsSmallScreen] = useState(false);
+  
+    useEffect(() => {
+      const checkScreenSize = () => {
+        setIsSmallScreen(window.innerWidth <= 640); // Adjust the breakpoint as needed
+      };
+  
+      checkScreenSize();
+  
+      const handleResize = () => {
+        checkScreenSize();
+      };
+  
+      window.addEventListener('resize', handleResize);
+      return () => window.removeEventListener('resize', handleResize);
+    }, []);
+  
+    const toggleMenu = () => {
+      setIsOpen(!isOpen);
+    };
+
+    return (
+    <div className="min-h-screen flex flex-col items-center justify-center text-white -z-30">
+      <header className="absolute top-0 left-0 flex justify-between items-center p-4 w-[100vw]">
         <div className="flex items-center space-x-4">
-          <img
-            alt="eDC IIT Delhi logo"
-            className="h-10"
-            height="40"
-            src="/placeholder.svg"
-            style={{
-              aspectRatio: "40/40",
-              objectFit: "cover",
-            }}
-            width="40"
-          />
-          <nav className="flex space-x-4 justify-center md:justify-start">
-            <a className="hover:text-gray-300" href="#">
-              Home
-            </a>
-            <a className="hover:text-gray-300" href="#">
-              Schedule
-            </a>
-            <a className="hover:text-gray-300" href="#">
-              Speakers
-            </a>
-            <a className="hover:text-gray-300" href="#">
-              Events
-            </a>
-            <a className="hover:text-gray-300" href="#">
-              Merchandise
-            </a>
-            <a className="hover:text-gray-300" href="#">
-              Sponsors
-            </a>
-            <a className="hover:text-gray-300" href="#">
-              About
-            </a>
-            <a className="hover:text-gray-300" href="#">
-              Startup Expo
-            </a>
-          </nav>
-        </div>
-        <div className="space-x-2">
-          <Button className="bg-blue-600 hover:bg-blue-700">Login</Button>
-          <Button className="bg-blue-600 hover:bg-blue-700">Register</Button>
+          {isSmallScreen ? (
+            <div className="cursor-pointer flex justify-center align-middle " onClick={toggleMenu}>
+              <AiOutlineMenu className="w-6 h-6 text-gray-300" />
+              <img
+                src="../src/assets/Science Club New PNG logo.png"
+                alt="logo"
+                className=" size-10 relative left-[80vw]"
+                style={{
+                  aspectRatio: "40/40",
+                  objectFit: "cover",
+                }}
+              />
+              <img
+                src="../src/assets/aic.png"
+                alt="logo"
+                className=" size-10 relative left-[60vw]"
+                style={{
+                  aspectRatio: "40/40",
+                  objectFit: "cover",
+                }}
+              />
+            </div>
+          ) : (
+            <nav className="flex space-x-4 justify-between w-full items-center">
+              <div className="flex items-center space-x-4">
+                <a className="hover:text-gray-300" href="#">
+                  Home
+                </a>
+                <a className="hover:text-gray-300" href="#">
+                  Schedule
+                </a>
+                <a className="hover:text-gray-300" href="#">
+                  Speakers
+                </a>
+                <a className="hover:text-gray-300" href="#">
+                  Events
+                </a>
+                <a className="hover:text-gray-300" href="#">
+                  Merchandise
+                </a>
+                <a className="hover:text-gray-300" href="#">
+                  About
+                </a>
+                <a className="hover:text-gray-300" href="#">
+                  Startup Expo
+                </a>
+              </div>
+              <img
+                src="../src/assets/Science Club New PNG logo.png"
+                alt="logo"
+                className="size-20 relative left-[65vw]"
+                style={{
+                  aspectRatio: "40/40",
+                  objectFit: "cover",
+                }}
+              />
+              <img
+                src="../src/assets/aic.png"
+                alt="logo"
+                className=" size-20 relative left-[55vw]"
+                style={{
+                  aspectRatio: "40/40",
+                  objectFit: "cover",
+                }}
+              />
+            </nav>
+          )}
         </div>
       </header>
       <main className="flex flex-col items-center justify-center px-4 text-center">
-        <h1 className="text-6xl font-bold mb-2">ECON 2024</h1>
-        <p className="text-2xl mb-8">GENESIS WAVE OF INNOVATION</p>
-        <p className="text-xl mb-12">3 & 4 FEB</p>
-        <div className="space-x-4">
-          <Button className="bg-blue-500 hover:bg-blue-600">Register</Button>
-          <Button className="bg-transparent border border-white hover:bg-white hover:text-blue-500">Login</Button>
-        </div>
+        <img src='../src/assets/VIGYAAN.png' className=' absolute z-10'/>
+        <video src='../src/assets/YAAN.mp4' autoPlay loop muted className=' rotate-90 scale-x-150 -z-10 scale-y-200'></video>
       </main>
-    </div>
-  )
-}
+      {isOpen && (
+        <div className="absolute top-5 mt-8 bg-[#1010107a] shadow-lg rounded z-10 w-[100vw] ">
+          <ul>
+              <li><a className="hover:text-gray-300" href="#">
+                Home
+              </a></li>
+              <li><a className="hover:text-gray-300" href="#">
+                Schedule
+              </a></li>
+              <li><a className="hover:text-gray-300" href="#">
+                Speakers
+              </a></li>
+              <li><a className="hover:text-gray-300" href="#">
+                Events
+              </a></li>
+              <li><a className="hover:text-gray-300" href="#">
+                Merchandise
+              </a></li>
+              <li><a className="hover:text-gray-300" href="#">
+                About
+              </a></li>
 
+              </ul>
+        </div>
+      )}
+    </div>
+  );
+}
