@@ -1,11 +1,9 @@
-
-
 export default function Speakers() {
   return (
     <div className="bg-[#0c0c0c] py-12">
       <div className="container mx-auto px-4">
-        <h2 className="text-center text-7xl font-semibold mb-10 text-[#ebe4a6]">Events</h2>
-        <section id="Events" className="flex flex-wrap justify-around">
+        <h2 className="text-center text-7xl font-semibold mb-10 text-[#ebe4a6]">Speakers</h2>
+        <section id="Speakers" className="flex flex-wrap justify-around">
           <div className="carousel-item rounded sm: w-2/3 lg:w-[23em] flex flex-col items-center  bg-gradient-to-t from-[#010101] to-[#ebe4a6]">
             <div className="card w-96 bg-transparent text-[#ebe4a6] shadow-xl">
               <div className="w-full sm:w-1/2 lg:w-1/3 group relative overflow-hidden">
