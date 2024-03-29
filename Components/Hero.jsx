@@ -1,132 +1,115 @@
 import React, { useState, useEffect } from 'react';
-import { AiOutlineMenu } from 'react-icons/ai';
-import { Button } from "@/components/ui/button";
 
-export default function Hero() {
-    const [isOpen, setIsOpen] = useState(false);
-    const [isSmallScreen, setIsSmallScreen] = useState(false);
-  
-    useEffect(() => {
-      const checkScreenSize = () => {
-        setIsSmallScreen(window.innerWidth <= 640); // Adjust the breakpoint as needed
-      };
-  
-      checkScreenSize();
-  
-      const handleResize = () => {
-        checkScreenSize();
-      };
-  
-      window.addEventListener('resize', handleResize);
-      return () => window.removeEventListener('resize', handleResize);
-    }, []);
-  
-    const toggleMenu = () => {
-      setIsOpen(!isOpen);
+
+const MyVideo = () => {
+  // const [viewportHeight, setViewportHeight] = useState(window.innerHeight);
+  const [viewportWidth, setViewportWidth] = useState(window.innerWidth);
+
+  useEffect(() => {
+    const handleResize = () => {
+      window.location.reload();
+      setViewportHeight(window.innerHeight);
+      setViewportWidth(window.innerWidth);
     };
 
-    return (
-    <div className="min-h-screen flex flex-col items-center justify-center text-white -z-30">
-      <header className="absolute top-0 left-0 flex justify-between items-center p-4 w-[100vw]">
-        <div className="flex items-center space-x-4">
-          {isSmallScreen ? (
-            <div className="cursor-pointer flex justify-center align-middle " onClick={toggleMenu}>
-              <AiOutlineMenu className="w-6 h-6 text-gray-300" />
-              <img
-                src="../src/assets/Science Club New PNG logo.png"
-                alt="logo"
-                className=" size-10 relative left-[80vw]"
-                style={{
-                  aspectRatio: "40/40",
-                  objectFit: "cover",
-                }}
-              />
-              <img
-                src="../src/assets/aic.png"
-                alt="logo"
-                className=" size-10 relative left-[60vw]"
-                style={{
-                  aspectRatio: "40/40",
-                  objectFit: "cover",
-                }}
-              />
-            </div>
-          ) : (
-            <nav className="flex space-x-4 justify-between w-full items-center">
-              <div className="flex items-center space-x-4">
-                <a className="hover:text-gray-300" href="#">
-                  Home
-                </a>
-                <a className="hover:text-gray-300" href="#">
-                  Schedule
-                </a>
-                <a className="hover:text-gray-300" href="#">
-                  Speakers
-                </a>
-                <a className="hover:text-gray-300" href="#">
-                  Events
-                </a>
-                <a className="hover:text-gray-300" href="#">
-                  Merchandise
-                </a>
-                <a className="hover:text-gray-300" href="#">
-                  About
-                </a>
-                <a className="hover:text-gray-300" href="#">
-                  Startup Expo
-                </a>
-              </div>
-              <img
-                src="../src/assets/Science Club New PNG logo.png"
-                alt="logo"
-                className="size-20 relative left-[65vw]"
-                style={{
-                  aspectRatio: "40/40",
-                  objectFit: "cover",
-                }}
-              />
-              <img
-                src="../src/assets/aic.png"
-                alt="logo"
-                className=" size-20 relative left-[55vw]"
-                style={{
-                  aspectRatio: "40/40",
-                  objectFit: "cover",
-                }}
-              />
-            </nav>
-          )}
-        </div>
-      </header>
-      <main className="flex flex-col items-center justify-center px-4 text-center">
-        <img src='../src/assets/VIGYAAN.png' className=' absolute z-10'/>
-        <video src='../src/assets/YAAN.mp4' autoPlay loop muted className=' rotate-90 scale-x-150 -z-10 scale-y-200'></video>
-      </main>
-      {isOpen && (
-        <div className="absolute top-5 mt-8 bg-[#1010107a] shadow-lg rounded z-10 w-[100vw] ">
-          <ul>
-              <li><a className="hover:text-gray-300" href="#">
-                Home
-              </a></li>
-              <li><a className="hover:text-gray-300" href="#">
-                Schedule
-              </a></li>
-              <li><a className="hover:text-gray-300" href="#">
-                Speakers
-              </a></li>
-              <li><a className="hover:text-gray-300" href="#">
-                Events
-              </a></li>
-              <li><a className="hover:text-gray-300" href="#">
-                Merchandise
-              </a></li>
-              <li><a className="hover:text-gray-300" href="#">
-                About
-              </a></li>
+    window.addEventListener('resize', handleResize);
 
-              </ul>
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+
+  const isSmallScreen = viewportWidth < 640;
+
+
+  return (
+    <video
+      autoPlay
+      loop
+      muted
+      className={`z-0 ${isSmallScreen ? 'rotate-90 scale-x-200 scale-y-200' : 'scale-100 scale-y-100'}`}
+    >
+      <source src="../src/assets/space.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+  );
+};
+
+
+export default function Hero() {
+  const [isOpen, setIsOpen] = useState(false);
+
+
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+  };
+
+
+
+    
+
+  return (
+    <div className='relative'>
+      <div className='fixed z-50 w-screen'>
+      <nav className="flex justify-between items-center bg-gray-800 bg-opacity-0 text-white px-4 py-3 ">
+        {/* Navbar items */}
+        <div className="hidden md:flex items-center space-x-4">
+          <a href="/" className="hover:text-gray-300">Home</a>
+          <a href="/" className="hover:text-gray-300">Speakers</a>
+          <a href="/" className="hover:text-gray-300">Events</a>
+          <a href="/" className="hover:text-gray-300">About us</a>
         </div>
-      )}
+
+
+
+
+
+        <div className="md:hidden">
+        <button
+      onClick={toggleMenu}
+      className="focus:outline-none"
+      aria-label={isOpen ? 'Close Menu' : 'Open Menu'}
+    >
+      <svg
+        className={`w-6 h-6 text-white transition-transform duration-300 transform ${isOpen ? 'rotate-90' : ''}`}
+        fill="none"
+        stroke="currentColor"
+        viewBox="0 0 24 24"
+      >
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d={isOpen ? "M6 18 18 6M6 6l12 12" : "M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"} />
+      </svg>
+    </button>
+        </div>
+
+
+
+
+        <div className="flex items-center">
+          <img src="../src/assets/Science Club New PNG logo.png" alt="Logo" className="w-12 h-12 sm:mx-4 sm:w-16 sm:h-16" />
+        </div>
+
+        {isOpen && (
+          <div className="md:hidden absolute top-16 rounded left-0 right-0 bg-gray-800 my-2 mx-4 py-2 z-50 flex justify-end">
+          <div className="flex flex-col w-full items-start">
+            <a href="/" className="px-8 py-2 text-white hover:bg-gray-700">Home</a>
+            <a href="/" className="px-8 py-2 text-white hover:bg-gray-700">Speakers</a>
+            <a href="/" className="px-8 py-2 text-white hover:bg-gray-700">Events</a>
+            <a href="/" className="px-8 py-2 text-white hover:bg-gray-700">About us</a>
+
+          </div>
+        </div>
+        )}
+      </nav>
+      </div>
+
+      <div className="relative overflow-hidden h-[25em] xs:h-[30em] sm:h-auto">
+        <MyVideo />
+
+        <div className="absolute inset-0 flex items-center justify-center">
+          <img src='../src/assets/VIGYAAN.png' className=' absolute z-10' />
+        </div>
+      </div>
     </div>
   );
+  
 }
