@@ -39,7 +39,7 @@ function CheckIcon(props) {
 }
 
 
-function SponsorshipCard(title, price, features) {
+function SponsorshipCard(title, price, features, description, image) {
 
   //title, price should be string
   // features should be array of strings , so that we can map it
@@ -87,7 +87,7 @@ function SponsorshipCard(title, price, features) {
         </div>
 
         <h3 className="font-semibold text-heading-6 text-white my-3">
-          Co-Sponsor
+          {{title}}
         </h3>
 
         <div className="flex items-center gap-3.5">
