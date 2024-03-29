@@ -72,5 +72,14 @@
   }
   body {
     @apply bg-background text-foreground;
+    overflow-x: hidden;
   }
+}
+.scale-y-200 {
+  --tw-scale-y: 2;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+.bg-gradient-radial {
+  background-image: radial-gradient(circle, #070528, #000001);
+  /* You can adjust the colors and other gradient properties as needed */
 }
