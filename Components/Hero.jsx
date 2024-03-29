@@ -100,9 +100,9 @@ export default function Hero() {
       <main className="flex flex-col items-center justify-center px-4 text-center">
         <img src='../src/assets/VIGYAAN.png' className=' absolute z-10'/>
         <video 
-          src='../src/assets/183279 (720p).mp4' 
+          src='../src/assets/space.mp4' 
           autoPlay loop muted 
-          className={`-z-10 ${isSmallScreen ? 'rotate-90 scale-x-150 scale-y-200' : 'scale-x-200 scale-y-200'}`}
+          className={`-z-10 ${isSmallScreen ? 'rotate-90 scale-x-150 scale-y-200' : ' scale-125 scale-y-125'}`}
         ></video>
       </main>
       {isOpen && (
