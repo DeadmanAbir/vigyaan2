@@ -52,8 +52,8 @@ export default function Hero() {
               />
             </div>
           ) : (
-            <nav className="flex space-x-4 justify-between w-full items-center">
-              <div className="flex items-center space-x-4">
+            <nav className="flex space-x-4 align-middle w-full items-center text-center" >
+              <div className="flex items-center space-x-4 justify-center ">
                 <a className="hover:text-gray-300" href="#">
                   Home
                 </a>
@@ -100,7 +100,11 @@ export default function Hero() {
       </header>
       <main className="flex flex-col items-center justify-center px-4 text-center">
         <img src='../src/assets/VIGYAAN.png' className=' absolute z-10'/>
-        <video src='../src/assets/YAAN.mp4' autoPlay loop muted className=' rotate-90 scale-x-150 -z-10 scale-y-200'></video>
+        <video 
+        src='../src/assets/183279 (720p).mp4' 
+        autoPlay loop muted 
+        className={` -z-10 ${isSmallScreen ? 'rotate-90 scale-x-150 scale-y-200' : 'scale-x-200 scale-y-200'}`}
+    ></video>
       </main>
       {isOpen && (
         <div className="absolute top-5 mt-8 bg-[#1010107a] shadow-lg rounded z-10 w-[100vw] ">
