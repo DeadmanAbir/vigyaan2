@@ -4,6 +4,7 @@ import viteLogo from "/vite.svg";
 import Hero from "../Components/Hero";
 import Speakers from "../Components/Speakers";
 import Package from "../Components/Package";
+import Accordion from "../Components/Accordian";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -14,6 +15,7 @@ function App() {
 
       <Speakers />
       <Package />
+      <Accordion/>
     </>
   );
 }
