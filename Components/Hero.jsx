@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import { AiOutlineMenu } from 'react-icons/ai';
-import { Button } from "@/components/ui/button";
 
 export default function Hero() {
     const [isOpen, setIsOpen] = useState(false);
@@ -35,7 +34,7 @@ export default function Hero() {
               <img
                 src="../src/assets/Science Club New PNG logo.png"
                 alt="logo"
-                className=" size-10 relative left-[80vw]"
+                className="size-10 relative left-[77vw]"
                 style={{
                   aspectRatio: "40/40",
                   objectFit: "cover",
@@ -44,7 +43,7 @@ export default function Hero() {
               <img
                 src="../src/assets/aic.png"
                 alt="logo"
-                className=" size-10 relative left-[60vw]"
+                className="size-10 relative left-[55vw]"
                 style={{
                   aspectRatio: "40/40",
                   objectFit: "cover",
@@ -52,8 +51,8 @@ export default function Hero() {
               />
             </div>
           ) : (
-            <nav className="flex space-x-4 align-middle w-full items-center text-center" >
-              <div className="flex items-center space-x-4 justify-center ">
+            <nav className="flex space-x-4 align-middle w-full items-center text-center">
+              <div className="flex items-center space-x-4 justify-center">
                 <a className="hover:text-gray-300" href="#">
                   Home
                 </a>
@@ -79,7 +78,7 @@ export default function Hero() {
               <img
                 src="../src/assets/Science Club New PNG logo.png"
                 alt="logo"
-                className="size-20 relative left-[65vw]"
+                className="size-20 relative left-[53vw]"
                 style={{
                   aspectRatio: "40/40",
                   objectFit: "cover",
@@ -88,7 +87,7 @@ export default function Hero() {
               <img
                 src="../src/assets/aic.png"
                 alt="logo"
-                className=" size-20 relative left-[55vw]"
+                className="size-20 relative left-[55vw]"
                 style={{
                   aspectRatio: "40/40",
                   objectFit: "cover",
@@ -101,10 +100,10 @@ export default function Hero() {
       <main className="flex flex-col items-center justify-center px-4 text-center">
         <img src='../src/assets/VIGYAAN.png' className=' absolute z-10'/>
         <video 
-        src='../src/assets/183279 (720p).mp4' 
-        autoPlay loop muted 
-        className={` -z-10 ${isSmallScreen ? 'rotate-90 scale-x-150 scale-y-200' : 'scale-x-200 scale-y-200'}`}
-    ></video>
+          src='../src/assets/183279 (720p).mp4' 
+          autoPlay loop muted 
+          className={`-z-10 ${isSmallScreen ? 'rotate-90 scale-x-150 scale-y-200' : 'scale-x-200 scale-y-200'}`}
+        ></video>
       </main>
       {isOpen && (
         <div className="absolute top-5 mt-8 bg-[#1010107a] shadow-lg rounded z-10 w-[100vw] ">
@@ -127,8 +126,7 @@ export default function Hero() {
               <li><a className="hover:text-gray-300" href="#">
                 About
               </a></li>
-
-              </ul>
+          </ul>
         </div>
       )}
     </div>
