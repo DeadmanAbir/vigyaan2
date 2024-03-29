@@ -9,16 +9,16 @@ const Accordion = () => {
 
     const questions = [
         {
-            question: "What is React?",
-            answer: "React is a JavaScript library for building user interfaces.",
+            question: "What is Vigyaan 2024?",
+            answer: "Vigyaan 2024 is a science fest organised at GGSIPU Dwarka Campus.",
         },
         {
-            question: "What is JSX?",
-            answer: "JSX is a syntax extension for JavaScript which allows writing HTML-like structures in your JavaScript code.",
+            question: "How to register and participate in Vigyaan Hackathon?",
+            answer: "To participate in Vigyaan Hackathon register on devfolio.",
         },
         {
-            question: "What is state in React?",
-            answer: "State is a built-in object in React used for containing the local state of a component.",
+            question: "When is the Vigyaan Hackathon?",
+            answer: "The Vigyaan hackathon is in Mid of April.",
         },
     ];
 
