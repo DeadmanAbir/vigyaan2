@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button"
 
 export default function Package() {
   return (
-    <div className="bg-black p-10 text-white">
+    <section id="Sponsorship" className="bg-black p-10 text-white">
       <h1 className="text-3xl font-bold text-center mb-8">SPONSORSHIP PACKAGES</h1>
       <div className="flex flex-col md:flex-row items-center justify-center h-auto md:grid md:grid-cols-4 gap-10" >
         <SponsorshipCard
@@ -32,7 +32,7 @@ export default function Package() {
           image="images/platinum.png"/>
 
       </div>
-    </div>
+    </section>
   )
 }
 
