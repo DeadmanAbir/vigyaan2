@@ -35,7 +35,7 @@ export default function Footer() {
         <a  href="#Home"><p className="transition-opacity duration-300 hover:opacity-80 transform">Home</p></a>
         <a href="#About"><p className="transition-opacity duration-300 hover:opacity-80 transform">About Us</p></a>
         <a href="#Speakers"><p className="transition-opacity duration-300 hover:opacity-80 transform">Speakers</p></a>
-        <a href=""><p className="transition-opacity duration-300 hover:opacity-80 transform">Contact</p></a>
+        <a href="#meet-team"><p className="transition-opacity duration-300 hover:opacity-80 transform">Meet The Team</p></a>
     </div>
 
     <div>
@@ -49,9 +49,9 @@ export default function Footer() {
     <div>
         <p>Follow Us</p>
         <div className="flex">
-        <img className="w-14 p-2 transition-opacity duration-300 hover:opacity-80" src="../src/assets/FooterF.png" alt="" />
-        <img className="w-14 p-2 transition-opacity duration-300 hover:opacity-80" src="../src/assets/FooterI.png" alt="" />
-        <img className="w-14 p-2 transition-opacity duration-300 hover:opacity-80" src="../src/assets/FooterT.png" alt="" />
+        <a href="https://www.instagram.com/srijan_science_club/" target="_blank"><img className="w-14 p-2 transition-opacity duration-300 hover:opacity-80" src="../src/assets/FooterI.png" alt="" /></a>
+        
+        <a href="https://www.linkedin.com/company/ssc-ggsipu/" target="_blank"><img className="w-14 p-2 transition-opacity duration-300 hover:opacity-80 invert" src="../src/assets/linkedin.svg" alt="" /></a>
 
         </div>
     </div>
