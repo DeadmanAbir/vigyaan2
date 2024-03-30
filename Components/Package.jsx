@@ -3,9 +3,9 @@ import { Button } from "@/components/ui/button"
 
 export default function Package() {
   return (
-    <section id="Sponsorship" className="bg-black p-10 text-white">
+    <div className="bg-black p-10 text-white">
       <h1 className="text-3xl font-bold text-center mb-8">SPONSORSHIP PACKAGES</h1>
-      <div className="flex flex-col md:flex-row items-center justify-center h-auto md:grid md:grid-cols-4 gap-10" >
+      <div className=" items-center justify-center h-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10" >
         <SponsorshipCard
           title="Co Sponsor"
           price="10000"
@@ -32,7 +32,7 @@ export default function Package() {
           image="images/platinum.png"/>
 
       </div>
-    </section>
+    </div>
   )
 }
 
@@ -97,8 +97,8 @@ function SponsorshipCard({ title, price, features, description, image }) {
   </div>
   )*/
   return (
-    <div className="flex flex-col items-center justify-center min-h-[900px] min-w-[300px] md:grid md:grid-cols-2 gap-7.5" style={{ display: 'flex', alignContent: 'center', justifyContent: 'center', maxWidth: '400px' }}>
-      <div className="wow fadeInUp rounded-3xl bg-gradient-45 relative z-20 overflow-hidden p-8 pricing-item-border min-h-[900px] md:h-auto " style={{ visibility: 'visible', }}>
+    <div className="flex flex-col items-center justify-center min-h-[950px] min-w-[300px] gap-7.5 " >
+      <div className="wow fadeInUp rounded-3xl bg-gradient-45 relative z-20 overflow-hidden p-8 pricing-item-border min-h-[900px] md:h-auto max-w-[400px]" style={{ visibility: 'visible', }}>
         <div className="w-full h-54 rounded-xl bg-white mb-8">
           <img loading="lazy" src={image} alt="merchandise" className="w-full h-full rounded-xl" />
         </div>
@@ -122,11 +122,11 @@ function SponsorshipCard({ title, price, features, description, image }) {
           )) : null}
         </ul>
 
-        <a href="#" target="_blank" className="mt-8 flex items-center justify-center gap-1.5 font-medium text-sky-300 p-3 rounded-lg transition-all ease-in-out duration-300 relative pricing-button-gradient hover:shadow-button w-full absolute bottom-0 left-1/2 transform -translate-x-1/2">
+        <a href="#" target="_blank" className="mt-4 mb-12 flex items-center justify-center gap-1.5 font-medium text-sky-300 p-3 rounded-lg transition-all ease-in-out duration-300 relative pricing-button-gradient hover:shadow-button w-full absolute bottom-0 left-1/2 transform -translate-x-1/2">
           Become a Sponsor
         </a>
 
-        <p className="mt-4 text-sm text-center absolute bottom-100 left-1/2 transform -translate-x-1/2">
+        <p className="mt-12 mb-10 text-sm text-center absolute bottom-0 left-1/2 transform -translate-x-1/2">
           {description}
         </p>
 
