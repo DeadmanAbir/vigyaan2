@@ -7,6 +7,7 @@ import Package from "../Components/Package";
 import Schedule from "../Components/Schedule";
 import About from "../Components/About";
 import Footer from "../Components/Footer";
+import Sponsors from "../Components/Sponsors.jsx";
 
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
       <Schedule />
       <Package />
       <About />
+      <Sponsors />
       <Footer />
 
     </>
