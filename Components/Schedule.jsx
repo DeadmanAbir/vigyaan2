@@ -2,9 +2,10 @@
 
 function Schedule(){
     return (<>
+    <section id="Schedule">
     <div className="bg-[#0c0c0c]" >
       <div className="flex justify-center py-12 px-10">
-      <img src="../src/assets/schedule.gif" alt="" />
+      <img src="../src/assets/schedule.jpg" alt="" />
       </div>
       <div className="py-10 bg-[#0c0c0c] flex justify-center">
 
@@ -14,7 +15,7 @@ function Schedule(){
       </div>
     </div>
 
-    <section id="events" className="wow fadeInUp relative overflow-hidden pt-17.5 lg:pt-22.5 xl:pt-27.5 bg-[#0c0c0c]">
+    <div id="events" className="wow fadeInUp relative overflow-hidden pt-17.5 lg:pt-22.5 xl:pt-27.5 bg-[#0c0c0c]">
       <div className="max-w-[1170px] mx-auto px-4 sm:px-8 xl:px-0">
         <div className="max-w-full mx-auto px-4 my-5 sm:px-8 xl:px-0">
 
@@ -122,9 +123,9 @@ function Schedule(){
         </div>
         
       </div>
+    </div>
+
     </section>
-
-
 
     
     </>)
