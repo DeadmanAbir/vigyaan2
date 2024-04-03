@@ -1,0 +1,93 @@
+.App {
+    font-family: sans-serif;
+    text-align: center;
+  }
+  .fade-blur {
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.4));
+    backdrop-filter: blur(10px);
+  }
+  
+  .inner img {
+    max-width: 150px;
+    height: 10rem;
+    padding: 0 15px;
+    object-fit: cover;
+  }
+  
+  .inner img:last-of-type {
+    padding-left: 0;
+  }
+
+
+  
+  .inner {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    height: 10rem;
+  }
+
+  #carousel-wrapper{
+    position: relative;
+  }
+
+  #carousel-wrapper:before,
+  #carousel-wrapper:after {
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    width: 10rem;
+    height: 100%;
+    content: "";
+
+  }
+
+  #carousel-wrapper:before {
+    left: 0;
+    background: linear-gradient(to left, rgba(255, 255, 255, 0), #001736 );
+  }
+
+  #carousel-wrapper:after {
+    right: 0;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0), #001736 );
+  }
+  
+  .wrapper {
+    position: absolute;
+    display: flex;
+  }
+  
+  .carousel-class {
+    display: flex;
+    animation: swipe var(--speed) linear infinite backwards;
+  }
+  
+  @keyframes swipe {
+    0% {
+      transform: translate(0);
+    }
+  
+    100% {
+      transform: translate(-100%);
+    }
+  }
+
+  
+  @media only screen and (max-width: 767px) {
+    .inner img{
+      height: 5rem;
+    }
+    .inner {
+      height: 5rem;
+    }
+
+    
+    #carousel-wrapper:before,
+    #carousel-wrapper:after{
+      width: 5rem;
+    }
+  
+
+  }
+
+  
