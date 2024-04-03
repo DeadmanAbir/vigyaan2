@@ -5,31 +5,36 @@ export default function Package() {
   return (
     <section id="Sponsorship" className="bg-black p-10 text-white">
       <h1 className="text-3xl font-bold text-center mb-8">SPONSORSHIP PACKAGES</h1>
-      <div className=" items-center justify-center h-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10" >
+      <div className=" items-center justify-center h-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10" >
         <SponsorshipCard
-          title="Co Sponsor"
-          price="10000"
-          features={["1 standee only", "Permission to set up stall only for one day in the fest", "We can share the database of participants."]}
-          description="Become a co-sponsor and enjoy exclusive benefits."
-          image="images/co-sponsor.png" />
+          title="Title Sponsor"
+          price="60,000+"
+          features={["2 Ads of 4-6 minutes.", "8 standees.", "Sponsor logo on official merchandise and banners.", "Permission to set up full size stall throughout the fest for free.", "Mention on Social Media", "Shout out on the official website.", "Max 2 hour workshop throughout the fest.", "We can share the full database of participants."]}
+          description="Volunteer certificate with sponsors logo."
+          image="images/title-sponsor.jpg" />
+      <SponsorshipCard title="Platinum Sponsor"
+        price="40,000"
+        features={["1 Ad of 3 minutes.", "5 standees.", "Sponsor logo on official merchandise and banners.", "Permission to set up full size stall throughout the fest for free.", "Mention on Social Media", "Shout out on the official website.", "Max 1 hour workshop throughout the fest.", "We can share the full database of participants."]}
+        description="We can share the database of participants."
+        image="images/platinum.png"/>
+          <SponsorshipCard title="Gold Sponsor"
+            price="28,000"
+            features={["1 Ad of 2 minutes.", "3 standees.", "Permission to set up half size stall throughout the fest for free.", "Mention on Social Media", "Shout out on the official website.", "Max 1 hour workshop throughout the fest.", "We can share the half database of participants."]}
+            description="Goodies or gift hampers to winners."
+            image="images/gold.png" />
+          <SponsorshipCard title="Silver Sponsor"
+            price="15,000"
+            features={["2 standees.", "Permission to set up stall throughout the fest on 50% - 60% discount.", "Mention on Social Media"]}
+            description="Contacts of vendors of required materials."
+            image="images/silver.png" />
+        <SponsorshipCard
+          title="Bronze Sponsor"
+          price="8,000"
+          features={["1 standee.", "Permission to set up stall throughout the fest on 30% - 40% discount."]}
+          description="Publicity of Vigyaan 2024."
+          image="images/bronze.jpg" />
 
-        <SponsorshipCard title="Silver Sponsor"
-          price="20000"
-          features={["5 minute advertisement", "1 banner and 2 standees", "1 unpaid workshop", "We can share the database of participants"]}
-          description="Permission to set up stall only for one day in the fest."
-          image="images/silver.png" />
 
-        <SponsorshipCard title="Gold Sponsor"
-          price="30000"
-          features={["10 minute advertisement", "2 banner and 4 standees", "1 unpaid workshop", "We can share the database of participants"]}
-          description="Permission to set up stall through out the fest"
-          image="images/gold.png" />
-
-        <SponsorshipCard title="Platinum Sponsor"
-          price="50000"
-          features={["5 banner and 5 standees", "Advertisement for an appropriate time period", "Permission to set up stall through out the fest.", "1 unpaid workshop", "We can share the database of participants"]}
-          description="Sponsor logo on official merchendise."
-          image="images/platinum.png"/>
 
       </div>
     </section>
@@ -97,8 +102,8 @@ function SponsorshipCard({ title, price, features, description, image }) {
   </div>
   )*/
   return (
-    <div className="flex flex-col items-center justify-center min-h-[950px] min-w-[300px] gap-7.5 " >
-      <div className="wow fadeInUp rounded-3xl bg-gradient-45 relative z-20 overflow-hidden p-8 pricing-item-border min-h-[900px] md:h-auto max-w-[400px]" style={{ visibility: 'visible', }}>
+    <div className="flex flex-col items-center justify-center min-h-[1200px] min-w-[275px] gap-7.5 " >
+      <div className="wow fadeInUp rounded-3xl bg-gradient-45 relative z-20 overflow-hidden p-8 pricing-item-border min-h-[1100px] md:h-auto max-w-[400px]" style={{ visibility: 'visible', }}>
         <div className="w-full h-54 rounded-xl bg-white mb-8">
           <img loading="lazy" src={image} alt="merchandise" className="w-full h-full rounded-xl" />
         </div>
