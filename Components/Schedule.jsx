@@ -29,14 +29,14 @@ function Schedule() {
 
               <div className="wow fadeInUp group bg-[#03396c] backdrop-filter backdrop-blur-sm rounded-lg overflow-hidden h-[36em]" style={{ visibility: 'visible' }}>
                 <div className="overflow-hidden">
-                  <img loading="lazy" src={speakerImage} alt="Event" className="ease-linear w-full duration-500 scale-100 group-hover:scale-125 h-80" />
+                  <img loading="lazy" src="../images/events/hackathon.jpg" alt="Event" className="ease-linear w-full duration-500 scale-100 group-hover:scale-125 h-80" />
                 </div>
 
                 <div className="p-4 h-60 flex flex-col justify-between">
                   <h4 className="red-hat text-4xl font-black transition-opacity duration-300 ease-in-out hover:opacity-60">Hackathon</h4>
                   <p className="font-extralight opacity-80">Unleash your inner Coder! Collaborate in teams and code, design, and build ingenious solutions to real-world problems. Witness the power of teamwork and unfold the innovation</p>
                   <div className='w-full flex justify-center'>
-                    <a href="" className="bg-white text-[#000] flex justify-center items-center p-2 w-9/12 rounded-md">
+                    <a href="https://vigyaan.devfolio.co/" target="_blank" className="bg-white text-[#000] flex justify-center items-center p-2 w-9/12 rounded-md">
 
                       <div className='w-5 mr-2 invert'>
                         <svg class="logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 115.46 123.46" fill="#fff">
@@ -49,6 +49,7 @@ function Schedule() {
             55.41 0 0 1 50.58 55.34z"></path>
                         </svg>
                       </div>
+                      
                       <p className="text-center text-1xl sm:2xl"> Apply with Devfolio</p>
 
                     </a>
@@ -59,26 +60,26 @@ function Schedule() {
               </div>
 
               <EventCard
-                imageSrc={speakerImage}
+                imageSrc="../images/events/vaad-vivad.jpg"
                 title="Vaad Vivaad"
                 description="Sharpen your arguments and defend your scientific stance. Witness a battle of wits in the Vaad Vivaad as participants engage in thought-provoking debates on scientific issues"
               />
 
 
               <EventCard
-                imageSrc={speakerImage}
+                imageSrc="../images/events/sciencetopia.avif"
                 title="Sciencetopia "
                 description="On a serious  note, English dictionary  is quite timid to explain how Evolutionary,Exceptional and Excellent it is ! We welcome  you to the most gorgeous  blend of Science and fiction,Activities, dj , surprises and list goes on"
               />
 
               <EventCard
-                imageSrc={speakerImage}
+                imageSrc="../images/events/science_exhibition.jpeg"
                 title="Science Exhibition"
                 description="Be amazed by the ingenuity of your peers! Witness a dazzling array of science projects and inventions displayed in the grand Science Exhibition. Engage with the creators and delve deeper into their scientific explorations."
               />
 
               <EventCard
-                imageSrc={speakerImage}
+                imageSrc="../images/events/photography.webp"
                 title="Photography Competition"
                 description="Showcase your scientific perspective through captivating photographs. Let creativity and knowledge converge in these esteemed competitions. "
               />
@@ -90,17 +91,17 @@ function Schedule() {
               />
 
               <EventCard
-                imageSrc={speakerImage}
+                imageSrc="../images/events/Poster_competition.jpeg"
                 title="Poster Competition"
                 description="Pull up your creativity  socks and showcase the creativity , Imagination  and Intelligence    in making of the most mindful poster, Empty white sheets are waiting for you!"
               />
               <EventCard
-                imageSrc={speakerImage}
+                imageSrc="../images/events/quiz_comp.jpeg"
                 title="Quiz Competition"
                 description="Test your scientific knowledge in a thrilling quiz competition. Put your brainpower to the test and vie for the coveted champion's title."
               />
               <EventCard
-                imageSrc={speakerImage}
+                imageSrc="../images/events/stand-up.jpeg"
                 title="Stand-Up"
                 description="Prepare to be laugh like crazy and entertained! Laughter is after all, the best medicine (except maybe actual medicine!). "
               />

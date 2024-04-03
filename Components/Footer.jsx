@@ -1,7 +1,7 @@
 export default function Footer() {
     return(
-        <section id="Footer" className="bg-[#0c0c0c] text-white lg:h-screen">
-            <div className="h-1/2 pt-2 lg:h-3/4 lg:pt-10 ">
+        <section id="Footer" className="bg-[#0c0c0c] text-white lg:h-auto lg:pb-10">
+            <div className="h-1/2 pt-2 lg:h-auto lg:pb-10 lg:pt-10 ">
             <div className="pt-10 flex flex-col justify-center items-center">
             <p className="text-6xl py-3 w-9/12">
             Our Story
@@ -9,7 +9,6 @@ export default function Footer() {
             <p className="text-1xl py-3 w-9/12">
             Welcome to The Srijan Science Club, where exploration meets global consciousness! We are dedicated to fostering a deep understanding of scientific principles while promoting global neutralization and related topics. Our club provides a dynamic platform for members to engage in thought-provoking discussions, collaborative experiments, and initiatives that transcend borders. <br/> <br/> Successfully hosted 5 impactful events ,Among these, a special collaboration stands out a dynamic event with the prestigious NIT,our commitment to fostering growth and connection continues to drive us forward.
             </p>
-            <a href="https://www.instagram.com/srijan_science_club?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw%3D%3D" className="text-1xl py-3 w-9/12" target="_blank">Read More...</a>
             </div>
 
             </div>
@@ -35,7 +34,9 @@ export default function Footer() {
         <a  href="#Home"><p className="transition-opacity duration-300 hover:opacity-80 transform">Home</p></a>
         <a href="#About"><p className="transition-opacity duration-300 hover:opacity-80 transform">About Us</p></a>
         <a href="#Speakers"><p className="transition-opacity duration-300 hover:opacity-80 transform">Speakers</p></a>
+        <a href="#sponsors"><p className="transition-opacity duration-300 hover:opacity-80 transform">Sponsors</p></a>
         <a href="#meet-team"><p className="transition-opacity duration-300 hover:opacity-80 transform">Meet The Team</p></a>
+
     </div>
 
     <div>
