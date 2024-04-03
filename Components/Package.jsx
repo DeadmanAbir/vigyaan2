@@ -122,7 +122,7 @@ function SponsorshipCard({ title, price, features, description, image }) {
           )) : null}
         </ul>
 
-        <a href="#" target="_blank" className="mt-4 mb-12 flex items-center justify-center gap-1.5 font-medium text-sky-300 p-3 rounded-lg transition-all ease-in-out duration-300 relative pricing-button-gradient hover:shadow-button w-full absolute bottom-0 left-1/2 transform -translate-x-1/2">
+        <a href="../src/assets/Vigyaan 2024 brochure.pdf" target="_blank" className="mt-4 mb-12 flex items-center justify-center gap-1.5 font-medium text-sky-300 p-3 rounded-lg transition-all ease-in-out duration-300 relative pricing-button-gradient hover:shadow-button w-full absolute bottom-0 left-1/2 transform -translate-x-1/2">
           Become a Sponsor
         </a>
 
