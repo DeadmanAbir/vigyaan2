@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button"
 
 export default function Package() {
   return (
-    <div className="bg-black p-10 text-white">
+    <section id="Sponsorship" className="bg-black p-10 text-white">
       <h1 className="text-3xl font-bold text-center mb-8">SPONSORSHIP PACKAGES</h1>
       <div className=" items-center justify-center h-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10" >
         <SponsorshipCard
@@ -32,7 +32,7 @@ export default function Package() {
           image="images/platinum.png"/>
 
       </div>
-    </div>
+    </section>
   )
 }
 
@@ -122,7 +122,7 @@ function SponsorshipCard({ title, price, features, description, image }) {
           )) : null}
         </ul>
 
-        <a href="#" target="_blank" className="mt-4 mb-12 flex items-center justify-center gap-1.5 font-medium text-sky-300 p-3 rounded-lg transition-all ease-in-out duration-300 relative pricing-button-gradient hover:shadow-button w-full absolute bottom-0 left-1/2 transform -translate-x-1/2">
+        <a href="../src/assets/Vigyaan 2024 brochure.pdf" target="_blank" className="mt-4 mb-12 flex items-center justify-center gap-1.5 font-medium text-sky-300 p-3 rounded-lg transition-all ease-in-out duration-300 relative pricing-button-gradient hover:shadow-button w-full absolute bottom-0 left-1/2 transform -translate-x-1/2">
           Become a Sponsor
         </a>
 
