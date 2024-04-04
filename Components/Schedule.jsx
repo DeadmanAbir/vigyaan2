@@ -25,8 +25,6 @@ function Schedule() {
 
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 sm:gap-7.5 ">
 
-
-
               <div className="wow fadeInUp group bg-[#03396c] backdrop-filter backdrop-blur-sm rounded-lg overflow-hidden h-[36em]" style={{ visibility: 'visible' }}>
                 <div className="overflow-hidden">
                   <img loading="lazy" src="../images/events/hackathon.jpg" alt="Event" className="ease-linear w-full duration-500 scale-100 group-hover:scale-125 h-80" />
@@ -60,7 +58,7 @@ function Schedule() {
               </div>
 
               <EventCard
-                imageSrc="../images/events/vaad-vivad.jpg"
+                imageSrc="../images/events/vaad_vivaad.png"
                 title="Vaad Vivaad"
                 description="Sharpen your arguments and defend your scientific stance. Witness a battle of wits in the Vaad Vivaad as participants engage in thought-provoking debates on scientific issues"
               />
@@ -73,19 +71,19 @@ function Schedule() {
               />
 
               <EventCard
-                imageSrc="../images/events/science_exhibition.jpeg"
+                imageSrc="../images/events/science_exhibition.png"
                 title="Science Exhibition"
                 description="Be amazed by the ingenuity of your peers! Witness a dazzling array of science projects and inventions displayed in the grand Science Exhibition. Engage with the creators and delve deeper into their scientific explorations."
               />
 
               <EventCard
-                imageSrc="../images/events/photography.webp"
+                imageSrc="../images/events/photography.png"
                 title="Photography Competition"
                 description="Showcase your scientific perspective through captivating photographs. Let creativity and knowledge converge in these esteemed competitions. "
               />
 
               <EventCard
-                imageSrc={speakerImage}
+                imageSrc="../images/events/paper_comp.png"
                 title="Paper Presentation"
                 description="It seems to be monotonous to most of us , Sadly It's the exact opposite  , Witness the most thrilling , Exclusive  15 research  paper already in the mix  with an interactive  QnA session.So when are you presenting  your paper?"
               />
@@ -96,7 +94,7 @@ function Schedule() {
                 description="Pull up your creativity  socks and showcase the creativity , Imagination  and Intelligence    in making of the most mindful poster, Empty white sheets are waiting for you!"
               />
               <EventCard
-                imageSrc="../images/events/quiz_comp.jpeg"
+                imageSrc="../images/events/quiz_showdown.png"
                 title="Quiz Competition"
                 description="Test your scientific knowledge in a thrilling quiz competition. Put your brainpower to the test and vie for the coveted champion's title."
               />
