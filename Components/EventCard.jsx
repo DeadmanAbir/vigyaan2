@@ -14,7 +14,7 @@ const EventCard = ({ imageSrc, title, description }) => {
 
   <div className='w-full flex justify-center pb-10'>
     <a href="../src/assets/Rules.pdf" target="_blank" className="bg-white text-[#000] flex justify-center items-center p-2 w-9/12 rounded-md">
-      <p className="text-center text-1xl sm:2xl"> Apply with Devfolio</p>
+      <p className="text-center text-1xl sm:2xl"> Download Rules</p>
     </a>
   </div>
 </div>
