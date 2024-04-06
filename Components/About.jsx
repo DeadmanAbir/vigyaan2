@@ -1,4 +1,11 @@
-function renderTeamMember(name, role, imageSrc, linkedinUrl, description) {
+import Linkedln from "../src/assets/linkedin.svg";
+import ScienceClub from "../src/assets/Science Club New PNG logo.png";
+import IPULogo from "../src/assets/IPU_LOGO.png";
+import Harshit from "../src/assets/harshit.jpg";
+import Rinki from "../src/assets/Rinki Vice President.jpg";
+import Kartik from "../src/assets/Kartik Media Head.jpg";
+import Yash from "../src/assets/Yash Technical head.jpg";
+function RenderTeamMember({ name, role, imageSrc, linkedinUrl, description }) {
   return (
     <div className="shadow-[8px_8px_#000] min-h-[140px] flex content-center items-center w-full mx-2 rounded-2xl border-solid border-black bg-[#155e89]">
       <div className="flex flex-col items-center py-3 px-3">
@@ -20,11 +27,7 @@ function renderTeamMember(name, role, imageSrc, linkedinUrl, description) {
 
         <div className="mt-4">
           <a href={linkedinUrl} target="_blank">
-            <img
-              src="../src/assets/linkedin.svg"
-              alt="LinkedIn Icon"
-              className="invert"
-            />
+            <img src={Linkedln} alt="LinkedIn Icon" className="invert" />
           </a>
         </div>
       </div>
@@ -54,7 +57,7 @@ export default function About() {
                     <div class=" sm:block  lg:w-4/12 p-4">
                       <img
                         class="w-[10em]"
-                        src="../src/assets/Science Club New PNG logo.png"
+                        src={ScienceClub}
                         alt="Logo Science club"
                       />
                     </div>
@@ -76,7 +79,7 @@ export default function About() {
                     <div class=" sm:block  lg:w-4/12 p-4">
                       <img
                         class="w-[10em]"
-                        src="../src/assets/IPU_LOGO.png"
+                        src={IPULogo}
                         alt="Logo Science club"
                       />
                     </div>
@@ -104,37 +107,36 @@ export default function About() {
         </p>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-7 w-10/12">
-          {renderTeamMember(
-            "Harshit Mittal",
-            "PRESIDENT",
-            "../src/assets/harshit.jpg",
-            "https://www.linkedin.com/in/-harshitmittal/",
-            "Harshit, pursuing Btech in Chemical Engineering, is the President of Srijan Science Club of GGSIPU."
-          )}
+          <RenderTeamMember
+            name="Harshit Mittal"
+            role="PRESIDENT"
+            imageSrc={Harshit}
+            linkedinUrl="https://www.linkedin.com/in/-harshitmittal/"
+            description="Harshit, pursuing Btech in Chemical Engineering, is the President of Srijan Science Club of GGSIPU."
+          />
+          <RenderTeamMember
+            name="Rinki Lodhi"
+            role="VICE PRESIDENT"
+            imageSrc={Rinki}
+            linkedinUrl="https://www.linkedin.com/in/rinki-lodhi-4b75b3228/"
+            description="Rinki, pursuing Btech in Chemical Engineering, is the Vice President of Srijan Science Club of GGSIPU."
+          />
 
-          {renderTeamMember(
-            "Rinki Lodhi",
-            "VICE PRESIDENT",
-            "../src/assets/Rinki Vice President.jpg",
-            "https://www.linkedin.com/in/rinki-lodhi-4b75b3228/",
-            "Rinki, pursuing Btech in Chemical Engineering, is the Vice President of Srijan Science Club of GGSIPU."
-          )}
+          <RenderTeamMember
+            name="Kartik Garg"
+            role="MEDIA HEAD"
+            imageSrc={Kartik}
+            linkedinUrl="https://www.linkedin.com/in/kartik-garg-99a754252/"
+            description="Kartik is responsible for all the media related events and activities."
+          />
 
-          {renderTeamMember(
-            "Kartik Garg",
-            "MEDIA HEAD",
-            "../src/assets/Kartik Media Head.jpg",
-            "https://www.linkedin.com/in/kartik-garg-99a754252/",
-            "Kartik is responsible for all the media related events and activities."
-          )}
-
-          {renderTeamMember(
-            "Yash Gupta",
-            "TECHNICAL HEAD",
-            "../src/assets/Yash Technical head.jpg",
-            "https://www.linkedin.com/in/yash-gupta-73b9281b1",
-            "Yash is the technical head of Srijan Science Club of GGSIPU."
-          )}
+          <RenderTeamMember
+            name="Yash Gupta"
+            role="TECHNICAL HEAD"
+            imageSrc={Yash}
+            linkedinUrl="https://www.linkedin.com/in/yash-gupta-73b9281b1"
+            description="Yash is the technical head of Srijan Science Club of GGSIPU."
+          />
         </div>
       </div>
     </section>

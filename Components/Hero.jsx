@@ -1,5 +1,8 @@
 import React, { useState, useEffect } from "react";
-
+import ScienceLogo from "../src/assets/Science Club New PNG logo.png";
+import AICLogo from "../src/assets/aic.png";
+import VIGYAAN from "../src/assets/VIGYAAN.png";
+import Space from "../src/assets/space.mp4";
 const MyVideo = () => {
   const [viewportWidth, setViewportWidth] = useState(window.innerWidth);
 
@@ -24,7 +27,7 @@ const MyVideo = () => {
 
   return (
     <video autoPlay loop muted className="z-0" style={customScalingStyles}>
-      <source src="../src/assets/space.mp4" type="video/mp4" />
+      <source src={Space} type="video/mp4" />
       Your browser does not support the video tag.
     </video>
   );
@@ -111,14 +114,14 @@ export default function Hero() {
           <div className="flex items-center">
             <a href="#Home">
               <img
-                src="../src/assets/Science Club New PNG logo.png"
+                src={ScienceLogo}
                 alt="Logo"
                 className="w-12 h-12 sm:mx-4 sm:w-16 sm:h-16"
               />
             </a>
             <a href="#Home">
               <img
-                src="../src/assets/aic.png"
+                src={AICLogo}
                 alt="Logo"
                 className="w-12 h-12 sm:mx-4 sm:w-16 sm:h-16"
               />
@@ -173,7 +176,7 @@ export default function Hero() {
 
         {/* Overlay content (optional) */}
         <div className="absolute inset-0 flex items-center justify-center">
-          <img src="../src/assets/VIGYAAN.png" className=" absolute z-10" />
+          <img src={VIGYAAN} className=" absolute z-10" />
         </div>
       </div>
     </section>

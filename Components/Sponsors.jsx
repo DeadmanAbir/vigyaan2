@@ -1,5 +1,9 @@
 import React from "react";
-
+import Sponsor1 from "../images/sponsors.png";
+import Sponsor2 from "../images/sponsors2.jpg";
+import ETHIndia from "../images/ethindia.png";
+import Polygon from "../images/polygon.png";
+import Devfolio from "../images/devfolio.png";
 export default function Sponsors() {
   return (
     <div id="sponsors" className="bg-[#001736]">
@@ -9,41 +13,21 @@ export default function Sponsors() {
 
       <div className="flex flex-wrap w-full justify-center">
         <div className="p-10">
-          <img
-            src={`../images/sponsors.png`}
-            alt="image sponsors"
-            className=" w-40"
-          />
+          <img src={Sponsor1} alt="image sponsors" className=" w-40" />
         </div>
 
         <div className="p-10">
-          <img
-            src={`../images/sponsors2.jpg`}
-            alt="image sponsors"
-            className="w-40"
-          />
+          <img src={Sponsor2} alt="image sponsors" className="w-40" />
         </div>
         <div className="p-10">
-          <img
-            src={`../images/ethindia.png`}
-            alt="image sponsors"
-            className="h-40"
-          />
+          <img src={ETHIndia} alt="image sponsors" className="h-40" />
         </div>
         <div className="p-10">
-          <img
-            src={`../images/polygon.png`}
-            alt="image sponsors"
-            className="h-40"
-          />
+          <img src={Polygon} alt="image sponsors" className="h-40" />
         </div>
 
         <div className="p-10">
-          <img
-            src={`../images/devfolio.png`}
-            alt="image sponsors"
-            className="h-40"
-          />
+          <img src={Devfolio} alt="image sponsors" className="h-40" />
         </div>
       </div>
     </div>
