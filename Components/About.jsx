@@ -1,6 +1,7 @@
 import Linkedln from "../src/assets/linkedin.svg";
 import ScienceClub from "../src/assets/Science Club New PNG logo.png";
 import IPULogo from "../src/assets/IPU_LOGO.png";
+import AICLogo from "../src/assets/aic.png";
 import Harshit from "../src/assets/harshit.jpg";
 import Rinki from "../src/assets/Rinki Vice President.jpg";
 import Kartik from "../src/assets/Kartik Media Head.jpg";
@@ -38,70 +39,77 @@ function RenderTeamMember({ name, role, imageSrc, linkedinUrl, description }) {
 export default function About() {
   return (
     <section id="About" className="bg-[#001736] text-[#fff]">
-      <div className="h-screen flex flex-col justify-center items-center">
-        <p className="text-center text-6xl py-3">Explore More</p>
-        <p className="text-center text-1xl pb-3 opacity-80">
-          Discover more sections of our website
-        </p>
-        <div className="w-40"></div>
-
-        <div class="container mx-[30em] py-8 w-full">
-          <div class="block lg:flex lg:flex-wrap lg:justify-center">
-            <div class="lg:w-5/12 w-11/12 mb-10 justify-center lg:mr-10">
-              <a
-                href="https://www.instagram.com/srijan_science_club?utm_source=ig_web_button_share_sheet&amp;igsh=ZDNlZDc0MzIxNw%3D%3D"
-                target="_blank"
-              >
-                <div class="transition duration-200 ease-in-out hover:shadow-[8px_8px_#9aeadd] shadow-[2px_2px_#9aeadd] min-h-140 flex items-center w-full mx-2 rounded-[20px] border-[2px] border-[#155e89] bg-[#155e89] text-[#fff]">
-                  <div class="flex">
-                    <div class=" sm:block  lg:w-4/12 p-4">
-                      <img
-                        class="w-[10em]"
-                        src={ScienceClub}
-                        alt="Logo Science club"
-                      />
-                    </div>
-                    <div class="flex flex-col justify-center p-1">
-                      <p class="text-2xl red-hat font-bold">About Us</p>
-                      <p className="opacity-80 red-hat font-extralight">
-                        Learn about the mission and vision of Srijan Science
-                        Club
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </a>
-            </div>
-            <div class="lg:w-5/12 w-11/12 justify-center">
-              <a href="http://www.ipu.ac.in/" target="_blank">
-                <div class="transition duration-200 ease-in-out hover:shadow-[8px_8px_#9aeadd] shadow-[2px_2px_#9aeadd] min-h-140 flex items-center w-full mx-2 rounded-[20px] border-[2px] border-[#155e89] bg-[#155e89] text-[#fff]">
-                  <div class="flex">
-                    <div class=" sm:block  lg:w-4/12 p-4">
-                      <img
-                        class="w-[10em]"
-                        src={IPULogo}
-                        alt="Logo Science club"
-                      />
-                    </div>
-                    <div class="flex flex-col justify-center p-1">
-                      <p class="text-2xl red-hat font-bold">Our University</p>
-                      <p className="opacity-80 red-hat font-extralight">
-                        Explore the academic excellence of GGSIPU
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </a>
+<div className="h-screen flex flex-col justify-center items-center">
+  <p className="text-center py-3 text-5xl md:6xl">Explore More</p>
+  <p className="text-center text-1xl pb-3 opacity-80">Discover more sections of our website</p>
+  <div className="container mx-[30em] py-8 w-full">
+    <div class="block lg:flex lg:flex-wrap lg:justify-center">
+      <div class="lg:w-5/12 w-11/12 mb-10 justify-center lg:mr-10" style={{ height: '100px' }}>
+        <a href="https://www.instagram.com/srijan_science_club?utm_source=ig_web_button_share_sheet&amp;igsh=ZDNlZDc0MzIxNw%3D%3D" target="_blank">
+          <div class="transition duration-200 ease-in-out hover:shadow-[8px_8px_#9aeadd] shadow-[2px_2px_#9aeadd] flex items-center w-full mx-2 rounded-[20px] border-[2px] border-[#155e89] bg-[#155e89] text-[#fff]" style={{ height: '100%' }}>
+            <div class="flex" style={{ height: '100%' }}>
+              <div class="sm:block lg:w-4/12 p-4 flex justify-center items-center" style={{ height: '100%' }}>
+                <img class="h-20" src={ScienceClub} alt="Logo Science club" /> 
+              </div>
+              <div class="flex flex-col justify-center p-1" style={{ minHeight: '100px' }}>
+                <p class="text-2xl red-hat font-bold">About Us</p>
+                <p className="opacity-80 red-hat font-extralight">
+                  Learn about the mission and vision of Srijan Science Club
+                </p>
+              </div>
             </div>
           </div>
-        </div>
+        </a>
       </div>
+      <div class="lg:w-5/12 w-11/12 mb-10 justify-center lg:mr-10" style={{ height: '100px' }}>
+        <a href="http://www.ipu.ac.in/" target="_blank">
+          <div class="transition duration-200 ease-in-out hover:shadow-[8px_8px_#9aeadd] shadow-[2px_2px_#9aeadd] flex items-center w-full mx-2 rounded-[20px] border-[2px] border-[#155e89] bg-[#155e89] text-[#fff]" style={{ height: '100%' }}>
+            <div class="flex" style={{ height: '100%' }}>
+              <div class="sm:block lg:w-4/12 p-4 flex justify-center items-center" style={{ height: '100%' }}>
+                <img class="h-20" src={IPULogo} alt="Logo Science club" /> 
+              </div>
+              <div class="flex flex-col justify-center p-1" style={{ minHeight: '100px' }}> 
+                <p class="text-2xl red-hat font-bold">Our University</p>
+                <p className="opacity-80 red-hat font-extralight">
+                Explore the academic excellence of GGSIPU
+
+                </p>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="lg:w-5/12 w-11/12 mb-10 justify-center lg:mr-10" style={{ height: '100px' }}>
+        <a href="https://aic-ggsipu.org/" target="_blank">
+          <div class="transition duration-200 ease-in-out hover:shadow-[8px_8px_#9aeadd] shadow-[2px_2px_#9aeadd] flex items-center w-full mx-2 rounded-[20px] border-[2px] border-[#155e89] bg-[#155e89] text-[#fff]" style={{ height: '100%' }}>
+            <div class="flex" style={{ height: '100%' }}>
+              <div class="sm:block lg:w-4/12 p-4 flex justify-center items-center" style={{ height: '100%' }}>
+                <img class="h-20" src={AICLogo} alt="Logo Science club" /> 
+              </div>
+              <div class="flex flex-col justify-center p-1" style={{ minHeight: '100px' }}> 
+                <p class="text-2xl red-hat font-bold">About AIC</p>
+                <p className="opacity-80 red-hat font-extralight">
+                  Learn about the mission and vision of AIC Club
+                </p>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+      
+
+
+
+    </div>
+  </div>
+</div>
+
 
       <div
         id="meet-team"
         className="pb-5 flex flex-col justify-center items-center"
       >
-        <p className="text-6xl py-6">Meet the Team</p>
+        <p className="text-5xl py-6 md:6xl">Meet the Team</p>
         <p className="text-1xl pb-3 opacity-80">
           Meet the dedicated team behind Vigyaan
         </p>
