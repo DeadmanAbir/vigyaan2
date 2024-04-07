@@ -3,6 +3,8 @@ import ScienceLogo from "../src/assets/Science Club New PNG logo.png";
 import AICLogo from "../src/assets/aic.png";
 import VIGYAAN from "../src/assets/VIGYAAN.png";
 import Space from "../src/assets/space.mp4";
+import '../src/HeroStyles.css';
+
 const MyVideo = () => {
   const [viewportWidth, setViewportWidth] = useState(window.innerWidth);
 
@@ -18,15 +20,9 @@ const MyVideo = () => {
     };
   }, []);
 
-  const isSmallScreen = viewportWidth < 640;
-
-  // Custom styles for scaling
-  const customScalingStyles = isSmallScreen
-    ? { transform: "rotate(90deg) scaleX(2) scaleY(2)" }
-    : {};
 
   return (
-    <video autoPlay loop muted className="z-0" style={customScalingStyles}>
+    <video autoPlay loop muted className="z-0 video_space">
       <source src={Space} type="video/mp4" />
       Your browser does not support the video tag.
     </video>
@@ -169,7 +165,7 @@ export default function Hero() {
       </div>
 
       {/* Video section */}
-      <div className="relative overflow-hidden h-[30em] xs:h-[2em] sm:h-auto bg-[#0c0c0c]">
+      <div className="relative overflow-hidden h-screen xs:h-[2em] sm:h-auto bg-[#0c0c0c]">
         {/* Video */}
         {/* <video autoPlay loop muted className="w-full h-auto rotate-90 sm:rotate-360"> */}
         <MyVideo />

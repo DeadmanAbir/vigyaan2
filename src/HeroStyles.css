@@ -1,0 +1,11 @@
+@media only screen and (max-width: 640px) {
+    .video_space{
+        transform: rotate(90deg);    
+        transform-origin: center;  
+        height: 100%;
+        scale: 2.3;   
+    }
+  }
+
+  
+
